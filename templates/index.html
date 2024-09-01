@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    >
+    <title>Attrition Prediction</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="/static/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Steller main styles -->
+	<link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-spy="affix" data-offset-top="0">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="/static/imgs/logo.jpg" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>          
+    </nav>
+    <!-- End of page navibation -->
+
+    <!-- Page Header -->
+    <header class="header" id="home">
+        <div class="container">
+            <div class="infos">
+                <br><br><br><br><br><br>
+                <h6 class="title">EMPLOYEE ATTRITION </h6>
+                <p>PREDICTION</p>
+
+                <div class="buttons pt-3">                    
+                    <button class="btn btn-dark rounded">visualization</button>
+                </div>      
+
+                <div class="socials mt-4">
+            
+            </div>              
+            <div class="img-holder">
+                <img src="/static/imgs/emp.png" alt="img">
+            </div>      
+        </div>  
+
+        <!-- Header-widget -->
+
+    </header>
+    <!-- End of Page Header -->
+    
+ 
+  
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="position-relative section">
+        <div class="container text-center">
+        
+            <div class="contact text-left">
+                <div class="form">
+                    
+                    <h6 class="section-title mb-4">Provide Employee details</h6>
+                    <form action="/" method="post">
+                      <div class="form-group">
+                          <label for="BusinessTravel">Business Travel:</label>
+                          <select name="BusinessTravel" id="BusinessTravel" class="form-control" required>
+                              <option value="0">Travel_Rarely</option>
+                              <option value="1">Travel_Frequently</option>
+                              <option value="2">Non-Travel</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="Department">Department:</label>
+                          <select name="Department" id="Department" class="form-control" required>
+                              <option value="0">Research & Development</option>
+                              <option value="1">Sales</option>
+                              <option value="2">Human Resources</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="DistanceFromHome">Distance From Home (in km):</label>
+                          <input type="number" name="DistanceFromHome" id="DistanceFromHome" class="form-control" step="0.01" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="EducationField">Education Field:</label>
+                          <select name="EducationField" id="EducationField" class="form-control" required>
+                              <option value="0">Life Sciences</option>
+                              <option value="1">Other</option>
+                              <option value="2">Medical</option>
+                              <option value="3">Marketing</option>
+                              <option value="4">Technical Degree</option>
+                              <option value="5">Human Resources</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="JobLevel">Job Level:</label>
+                          <select name="JobLevel" id="JobLevel" class="form-control" required>
+                            <option value="0">L01</option>
+                            <option value="1">L02</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="JobSatisfaction">Job Satisfaction:</label>
+                        <div id="JobSatisfaction">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="JobSatisfaction" id="JobSatisfaction1" value="0" required>
+                            <label class="form-check-label" for="JobSatisfaction1">1</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="JobSatisfaction" id="JobSatisfaction2" value="1" required>
+                            <label class="form-check-label" for="JobSatisfaction2">2</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="JobSatisfaction" id="JobSatisfaction3" value="2" required>
+                            <label class="form-check-label" for="JobSatisfaction3">3</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="JobSatisfaction" id="JobSatisfaction4" value="3" required>
+                            <label class="form-check-label" for="JobSatisfaction4">4</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="JobSatisfaction" id="JobSatisfaction5" value="4" required>
+                            <label class="form-check-label" for="JobSatisfaction5">5</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="form-group">
+                          <label for="OverTime">Overtime:</label>
+                          <select name="OverTime" id="OverTime" class="form-control" required>
+                              <option value="0">No</option>
+                              <option value="1">Yes</option>
+                          </select>
+                      </div>
+                      <div class="form-group">
+                          <label for="StockOptionLevel">Stock Option Level:</label>
+                          <select name="StockOptionLevel" id="StockOptionLevel" class="form-control" required>
+                            <option value="0">No</option>
+                            <option value="1">Yes</option>
+                        </select>
+                        </div>
+                      <div class="form-group">
+                          <label for="TotalWorkingYears">Total Working Years:</label>
+                          <input type="number" name="TotalWorkingYears" id="TotalWorkingYears" class="form-control" step="0.01" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="YearsInCurrentRole">Years In Current Role:</label>
+                          <input type="number" name="YearsInCurrentRole" id="YearsInCurrentRole" class="form-control" step="0.01" required>
+                      </div>
+                      <button type="submit" class="btn btn-primary btn-block">Predict Attrition</button>
+                  </form>
+                  
+                            
+                    </div>
+                </div>                  
+            </div>
+              
+    </section>
+    <!-- End of Contact Section -->
+
+
+	
+	<!-- core  -->
+    <script src="/static/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="/static/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <!-- bootstrap 3 affix -->
+	<script src="/static/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- steller js -->
+    <script src="/static/js/steller.js"></script>
+
+</body>
+</html>
